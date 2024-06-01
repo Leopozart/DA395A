@@ -100,7 +100,7 @@ function Algorithm({ genres }) {
 							</h2>
 						</div>
 
-						<div className="flex justify-between items-start mb-4 moviebox">
+						<div className="flex justify-between items-start mb-4 moviebox min-w-[340px]">
 							{currentPair.map((movie, index) => (
 								<div
 									key={movie.id}
@@ -108,7 +108,7 @@ function Algorithm({ genres }) {
 									<img
 										src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
 										alt={movie.title}
-										className="w-1/2 h-auto mx-auto imgborder"
+										className="min-w-32 w-1/2 h-auto mx-auto imgborder"
 									/>
 									<p className="text-center text-lg my-2 movietext">
 										{movie.title}
